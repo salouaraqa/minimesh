@@ -1,27 +1,22 @@
-#include <vtkSmartPointer.h>
-#include <vtkXMLUnstructuredGridReader.h>
+#include <cstdlib>
+#include <iostream>
+#include <string>
+#include <vector>
+#include <memory>
+#include <tuple>
 
-#include <vtkDataSetMapper.h>
-#include <vtkActor.h>
-#include <vtkRenderWindow.h>
-#include <vtkRenderer.h>
-#include <vtkRenderWindowInteractor.h>
-#include <vtkProperty.h>
-#include <vtkNamedColors.h>
 
-#pragma once
-
+#include "viewer.hpp"
 
 class Viewer
+
 {
 public:
-  Viewer(void) {}
-  ~Viewer(void) {}
 
-  // TODO
+
   void view(vtkSmartPointer<vtkXMLUnstructuredGridReader> reader)
-
   {
+
     auto colors = vtkSmartPointer<vtkNamedColors>::New();
 
     auto mapper = vtkSmartPointer<vtkDataSetMapper>::New();
@@ -48,7 +43,5 @@ public:
     renderWindowInteractor->Start();
 
 
-
   }
-
 };
