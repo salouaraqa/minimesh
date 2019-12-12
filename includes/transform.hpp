@@ -21,9 +21,10 @@ struct MergeParams : public Params
 
 struct TranslationParams : public Params
 {
-    std::string input;
-    std::string output;
-   // TODO
+  std::string input;
+  std::string output;
+  std::vector<double> coords;
+  // TODO
 };
 
 class Transform

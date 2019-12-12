@@ -95,11 +95,11 @@ int main(int argc, char **argv)
     }
 
 // Si params->transform_type est du type TRANSLATE
-    //else if(params->transform_type==TRANSLATE){
+    else if(params->transform_type==TRANSLATE){
 
-      //std::shared_ptr<MergeParams> tp = std::dynamic_pointer_cast<TranslationParams>(params);
-      //t->mytranslate(mp);
-    //}
+      TranslationParams * tp = dynamic_cast<TranslationParams*>(params);
+      t->mytranslate(tp);
+    }
 
   delete op;
 

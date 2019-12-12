@@ -48,10 +48,10 @@ RM = /usr/bin/cmake3 -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /net/i/souaraqa/visual_insitu/minimesh
+CMAKE_SOURCE_DIR = /net/i/ielguato/Documents/cisd/minimesh
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /net/i/souaraqa/visual_insitu/minimesh/build
+CMAKE_BINARY_DIR = /net/i/ielguato/Documents/cisd/minimesh/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,9 +126,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /net/i/souaraqa/visual_insitu/minimesh/build/CMakeFiles /net/i/souaraqa/visual_insitu/minimesh/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /net/i/ielguato/Documents/cisd/minimesh/build/CMakeFiles /net/i/ielguato/Documents/cisd/minimesh/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /net/i/souaraqa/visual_insitu/minimesh/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /net/i/ielguato/Documents/cisd/minimesh/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

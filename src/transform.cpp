@@ -27,7 +27,10 @@
 #include <vtkXMLUnstructuredGridWriter.h>
 #include <vtkGeometryFilter.h>
 #include <vtkAppendPoints.h>
-
+#include <vtkTransform.h>
+#include <vtkTransformPolyDataFilter.h>
+#include <vtkTransformFilter.h>
+#include <vtkDataSetMapper.h>
 #include "transform.hpp"
 #include "cpptoml.h"
 #include "viewer.hpp"
@@ -80,5 +83,52 @@ void Transform::mymerge(MergeParams *mp)
 }
 
 void Transform::mytranslate(TranslationParams *tp){
+
+  std::string input = tp->input;
+  std::string output = tp->output;
+
+  auto reader1 =vtkSmartPointer<vtkXMLUnstructuredGridReader>::New();
+  reader1->SetFileName(input.c_str());
+  reader1->Update();
+
+  auto originalMapper = vtkSmartPointer<vtkDataSetMapper>::New();
+  originalMapper->SetInputConnection(reader1->GetOutputPort());
+
+  auto originalActor = vtkSmartPointer<vtkActor>::New();
+  originalActor->SetMapper(originalMapper);
+
+  auto translation = vtkSmartPointer<vtkTransform>::New();
+  translation->Translate(tp->coords[0],tp->coords[1],tp->coords[2]);
+
+  auto reader = vtkSmartPointer<vtkXMLUnstructuredGridReader>::New();
+  reader->SetFileName(output.c_str());
+  reader->Update();
+
+  auto transformFilter = vtkSmartPointer<vtkTransformFilter>::New();
+  transformFilter->SetInputConnection(reader->GetOutputPort());
+  transformFilter->SetTransform(translation);
+  transformFilter->Update();
+
+
+   auto transformedMapper = vtkSmartPointer<vtkDataSetMapper>::New();
+   transformedMapper->SetInputConnection(transformFilter->GetOutputPort());
+
+  auto transformedActor = vtkSmartPointer<vtkActor>::New();
+  transformedActor->SetMapper(transformedMapper);
+
+
+  auto renderer =  vtkSmartPointer<vtkRenderer>::New();
+  renderer->AddActor(originalActor);
+  renderer->AddActor(transformedActor);
+  renderer->SetBackground(.4, .5, .4); // Set renderer's background color to green
+
+  auto renderWindow = vtkSmartPointer<vtkRenderWindow>::New();
+  renderWindow->AddRenderer(renderer);
+
+  auto renderWindowInteractor = vtkSmartPointer<vtkRenderWindowInteractor>::New();
+  renderWindowInteractor->SetRenderWindow(renderWindow);
+
+  renderWindow->Render();
+  renderWindowInteractor->Start();
 
 }
