@@ -1,25 +1,29 @@
 #pragma once
 
+#include<memory>
+#include "cpptoml.h"
 enum TransformType
-{
-  // TODO
-};
+{ MERGE, TRANSLATE };
 
 struct Params
 {
   virtual ~Params(void) = default;
-
+  TransformType transform_type;
   // TODO
 };
 
 struct MergeParams : public Params
 {
   // TODO
+  std::vector<std::string> input;
+  std::string output;
 };
 
 struct TranslationParams : public Params
 {
-  // TODO
+    std::string input;
+    std::string output;
+   // TODO
 };
 
 class Transform
@@ -29,4 +33,6 @@ public:
   ~Transform(void) {}
 
   // TODO
+  void mymerge(MergeParams*);
+  void mytranslate(TranslationParams*);
 };

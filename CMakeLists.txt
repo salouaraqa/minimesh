@@ -1,10 +1,10 @@
-cmake_minimum_required(VERSION 3.9)
+cmake_minimum_required(VERSION  3.9)
 
 project(minimesh
 	LANGUAGES CXX
 	VERSION 0.1.0)
 set(CMAKE_CXX_STANDARD 11)
-
+set(CMAKE_BUILD_TYPE Debug)
 include_directories(
     ${PROJECT_SOURCE_DIR}/includes
     ${PROJECT_SOURCE_DIR}/external/cpptoml
@@ -13,12 +13,14 @@ include_directories(
 
 set(EXE_SOURCES
   src/options.cpp
+  src/viewer.cpp
+  src/transform.cpp
   # Add other source files here, one by line
 )
 
 add_executable(${PROJECT_NAME} src/main.cpp ${EXE_SOURCES})
 
-set(VTK_DIR "${VTK_INSTALL_DIR}/lib/cmake/vtk-8.2")
+set(VTK_DIR "/opt/vtk/8.2.0/lib64/cmake/vtk-8.2")
 find_package(VTK REQUIRED)
 include(${VTK_USE_FILE})
 
