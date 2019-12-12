@@ -31,10 +31,12 @@
 #include <vtkTransformPolyDataFilter.h>
 #include <vtkTransformFilter.h>
 #include <vtkDataSetMapper.h>
+
 #include "transform.hpp"
 #include "cpptoml.h"
 #include "viewer.hpp"
 #include "options.hpp"
+#include "quality.hpp"
 
 void Transform::mymerge(MergeParams *mp)
 {
@@ -62,7 +64,12 @@ void Transform::mymerge(MergeParams *mp)
   appendFilter->AddInputData(input1);
   appendFilter->AddInputData(input2);
 
-
+  /*
+    if(mp->compute_quality){
+      auto qual = new QualityChecker();
+      qual->check_quality(appendFilter->GetOutput());
+    }
+    */
  //Remove any duplicate points.
   auto cleanFilter =  vtkSmartPointer<vtkCleanPolyData>::New();
   cleanFilter->SetInputConnection(appendFilter->GetOutputPort());

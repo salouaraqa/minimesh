@@ -1,5 +1,6 @@
 #pragma once
 #include <vtkSmartPointer.h>
+#include<vtkXMLImageDataReader.h>
 
 
 class Viewer

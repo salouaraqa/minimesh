@@ -6,7 +6,7 @@ CMakeFiles/minimesh.dir/src/main.cpp.o
  ../includes/options.hpp
  ../includes/transform.hpp
  ../includes/viewer.hpp
- /net/i/ielguato/Documents/cisd/minimesh/src/main.cpp
+ /net/i/souaraqa/visual_insitu/minimesh/src/main.cpp
  /opt/vtk/8.2.0/include/vtk-8.2/vtkABI.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkAOSDataArrayTemplate.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkAbstractArray.h
@@ -39,6 +39,7 @@ CMakeFiles/minimesh.dir/src/main.cpp.o
  /opt/vtk/8.2.0/include/vtk-8.2/vtkConfigure.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkDataArray.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkDataObject.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkDataReader.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkDataSet.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkDebugLeaksManager.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkFiltersCoreModule.h
@@ -46,6 +47,7 @@ CMakeFiles/minimesh.dir/src/main.cpp.o
  /opt/vtk/8.2.0/include/vtk-8.2/vtkGenericDataArray.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkGenericDataArray.txx
  /opt/vtk/8.2.0/include/vtk-8.2/vtkGenericDataArrayLookupHelper.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkIOLegacyModule.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkIOStream.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkIOStreamFwd.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkIOXMLModule.h
@@ -71,11 +73,13 @@ CMakeFiles/minimesh.dir/src/main.cpp.o
  /opt/vtk/8.2.0/include/vtk-8.2/vtkProp.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkProp3D.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkPropCollection.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkReaderAlgorithm.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkRenderWindow.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkRenderWindowInteractor.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkRenderer.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkRenderingCoreModule.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkSetGet.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkSimpleReader.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkSmartPointer.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkSmartPointerBase.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkSphereSource.h
@@ -90,6 +94,7 @@ CMakeFiles/minimesh.dir/src/main.cpp.o
  /opt/vtk/8.2.0/include/vtk-8.2/vtkUnsignedCharArray.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkUnstructuredGrid.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkUnstructuredGridBase.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkUnstructuredGridReader.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkVariant.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkVariantCast.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkVariantInlineOperators.h
@@ -103,8 +108,10 @@ CMakeFiles/minimesh.dir/src/main.cpp.o
  /opt/vtk/8.2.0/include/vtk-8.2/vtkWindow.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkWrappingHints.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkXMLDataReader.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkXMLImageDataReader.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkXMLPolyDataReader.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkXMLReader.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkXMLStructuredDataReader.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkXMLUnstructuredDataReader.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkXMLUnstructuredDataWriter.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkXMLUnstructuredGridReader.h
@@ -118,7 +125,7 @@ CMakeFiles/minimesh.dir/src/options.cpp.o
  ../includes/options.hpp
  ../includes/transform.hpp
  ../includes/viewer.hpp
- /net/i/ielguato/Documents/cisd/minimesh/src/options.cpp
+ /net/i/souaraqa/visual_insitu/minimesh/src/options.cpp
  /opt/vtk/8.2.0/include/vtk-8.2/vtkABI.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkAOSDataArrayTemplate.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkAbstractArray.h
@@ -220,8 +227,10 @@ CMakeFiles/minimesh.dir/src/options.cpp.o
  /opt/vtk/8.2.0/include/vtk-8.2/vtkWindow.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkWrappingHints.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkXMLDataReader.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkXMLImageDataReader.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkXMLPolyDataReader.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkXMLReader.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkXMLStructuredDataReader.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkXMLUnstructuredDataReader.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkXMLUnstructuredDataWriter.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkXMLUnstructuredGridReader.h
@@ -230,12 +239,123 @@ CMakeFiles/minimesh.dir/src/options.cpp.o
  /opt/vtk/8.2.0/include/vtk-8.2/vtk_kwiml.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkkwiml/abi.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkkwiml/int.h
+CMakeFiles/minimesh.dir/src/quality.cpp.o
+ ../includes/quality.hpp
+ ../includes/viewer.hpp
+ /net/i/souaraqa/visual_insitu/minimesh/src/quality.cpp
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkABI.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkAOSDataArrayTemplate.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkAbstractArray.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkAbstractCellLinks.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkAbstractMapper.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkAbstractMapper3D.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkActor.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkActorCollection.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkAlgorithm.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkAppendFilter.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkAtomic.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkAtomicTypeConcepts.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkAtomicTypes.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkAutoInit.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkBuffer.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkCell.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkCellArray.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkCellData.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkCellLinks.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkCellType.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkCellTypes.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkCollection.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkCommand.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkCommonCoreModule.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkCommonDataModelModule.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkCommonExecutionModelModule.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkConfigure.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkDataArray.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkDataObject.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkDataSet.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkDataSetAlgorithm.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkDataSetAttributes.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkDataSetAttributesFieldList.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkDebugLeaksManager.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkDoubleArray.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkFieldData.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkFiltersCoreModule.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkFiltersSourcesModule.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkFiltersVerdictModule.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkGenericDataArray.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkGenericDataArray.txx
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkGenericDataArrayLookupHelper.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkIOStream.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkIOStreamFwd.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkIOXMLModule.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkIdList.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkIdTypeArray.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkIndent.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkIntArray.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkMapper.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkMath.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkMathConfigure.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkMeshQuality.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkNew.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkOStrStreamWrapper.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkOStreamWrapper.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkObject.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkObjectBase.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkObjectFactory.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkPointData.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkPointSet.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkPoints.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkPolyData.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkPolyDataAlgorithm.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkPolyDataMapper.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkProp.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkProp3D.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkPropCollection.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkRenderWindow.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkRenderWindowInteractor.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkRenderer.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkRenderingCoreModule.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkSetGet.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkSmartPointer.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkSmartPointerBase.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkSphereSource.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkStdString.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkSystemIncludes.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkTimeStamp.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkTriangleFilter.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkType.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkTypeTraits.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkUnicodeString.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkUnsignedCharArray.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkUnstructuredGrid.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkUnstructuredGridAlgorithm.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkUnstructuredGridBase.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkVariant.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkVariantCast.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkVariantInlineOperators.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkVersion.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkVersionMacros.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkViewport.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkVolume.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkVolumeCollection.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkWeakPointerBase.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkWin32Header.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkWindow.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkWrappingHints.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkXMLDataReader.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkXMLImageDataReader.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkXMLReader.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkXMLStructuredDataReader.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtk_kwiml.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkkwiml/abi.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkkwiml/int.h
 CMakeFiles/minimesh.dir/src/transform.cpp.o
  ../external/cpptoml/cpptoml.h
  ../includes/options.hpp
+ ../includes/quality.hpp
  ../includes/transform.hpp
  ../includes/viewer.hpp
- /net/i/ielguato/Documents/cisd/minimesh/src/transform.cpp
+ /net/i/souaraqa/visual_insitu/minimesh/src/transform.cpp
  /opt/vtk/8.2.0/include/vtk-8.2/vtkABI.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkAOSDataArrayTemplate.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkAbstractArray.h
@@ -348,8 +468,10 @@ CMakeFiles/minimesh.dir/src/transform.cpp.o
  /opt/vtk/8.2.0/include/vtk-8.2/vtkWindow.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkWrappingHints.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkXMLDataReader.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkXMLImageDataReader.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkXMLPolyDataReader.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkXMLReader.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkXMLStructuredDataReader.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkXMLUnstructuredDataReader.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkXMLUnstructuredDataWriter.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkXMLUnstructuredGridReader.h
@@ -360,7 +482,7 @@ CMakeFiles/minimesh.dir/src/transform.cpp.o
  /opt/vtk/8.2.0/include/vtk-8.2/vtkkwiml/int.h
 CMakeFiles/minimesh.dir/src/viewer.cpp.o
  ../includes/viewer.hpp
- /net/i/ielguato/Documents/cisd/minimesh/src/viewer.cpp
+ /net/i/souaraqa/visual_insitu/minimesh/src/viewer.cpp
  /opt/vtk/8.2.0/include/vtk-8.2/vtkABI.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkAbstractArray.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkAbstractMapper.h
@@ -387,6 +509,7 @@ CMakeFiles/minimesh.dir/src/viewer.cpp.o
  /opt/vtk/8.2.0/include/vtk-8.2/vtkFiltersCoreModule.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkIOStream.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkIOStreamFwd.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkIOXMLModule.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkIndent.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkMapper.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkNamedColors.h
@@ -423,6 +546,10 @@ CMakeFiles/minimesh.dir/src/viewer.cpp.o
  /opt/vtk/8.2.0/include/vtk-8.2/vtkWin32Header.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkWindow.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkWrappingHints.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkXMLDataReader.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkXMLImageDataReader.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkXMLReader.h
+ /opt/vtk/8.2.0/include/vtk-8.2/vtkXMLStructuredDataReader.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtk_kwiml.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkkwiml/abi.h
  /opt/vtk/8.2.0/include/vtk-8.2/vtkkwiml/int.h

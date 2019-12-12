@@ -44,6 +44,8 @@ cpptoml.h
 transform.hpp
 ../includes/transform.hpp
 
+../includes/quality.hpp
+
 ../includes/transform.hpp
 memory
 -
@@ -53,8 +55,10 @@ cpptoml.h
 ../includes/viewer.hpp
 vtkSmartPointer.h
 -
+vtkXMLImageDataReader.h
+-
 
-/net/i/ielguato/Documents/cisd/minimesh/src/main.cpp
+/net/i/souaraqa/visual_insitu/minimesh/src/main.cpp
 cstdlib
 -
 iostream
@@ -103,16 +107,18 @@ vtkVersion.h
 -
 vtkXMLUnstructuredGridWriter.h
 -
+vtkUnstructuredGridReader.h
+-
 cpptoml.h
-/net/i/ielguato/Documents/cisd/minimesh/src/cpptoml.h
+/net/i/souaraqa/visual_insitu/minimesh/src/cpptoml.h
 options.hpp
-/net/i/ielguato/Documents/cisd/minimesh/src/options.hpp
+/net/i/souaraqa/visual_insitu/minimesh/src/options.hpp
 viewer.hpp
-/net/i/ielguato/Documents/cisd/minimesh/src/viewer.hpp
+/net/i/souaraqa/visual_insitu/minimesh/src/viewer.hpp
 transform.hpp
-/net/i/ielguato/Documents/cisd/minimesh/src/transform.hpp
+/net/i/souaraqa/visual_insitu/minimesh/src/transform.hpp
 
-/net/i/ielguato/Documents/cisd/minimesh/src/options.cpp
+/net/i/souaraqa/visual_insitu/minimesh/src/options.cpp
 memory
 -
 vtkSmartPointer.h
@@ -154,13 +160,65 @@ vtkGeometryFilter.h
 vtkAppendPoints.h
 -
 viewer.hpp
-/net/i/ielguato/Documents/cisd/minimesh/src/viewer.hpp
+/net/i/souaraqa/visual_insitu/minimesh/src/viewer.hpp
 options.hpp
-/net/i/ielguato/Documents/cisd/minimesh/src/options.hpp
+/net/i/souaraqa/visual_insitu/minimesh/src/options.hpp
 cpptoml.h
-/net/i/ielguato/Documents/cisd/minimesh/src/cpptoml.h
+/net/i/souaraqa/visual_insitu/minimesh/src/cpptoml.h
 
-/net/i/ielguato/Documents/cisd/minimesh/src/transform.cpp
+/net/i/souaraqa/visual_insitu/minimesh/src/quality.cpp
+cstdlib
+-
+iostream
+-
+string
+-
+vector
+-
+memory
+-
+tuple
+-
+vtkUnstructuredGrid.h
+-
+vtkVersion.h
+-
+vtkPolyData.h
+-
+vtkPointData.h
+-
+vtkCellData.h
+-
+vtkDoubleArray.h
+-
+vtkDataSet.h
+-
+vtkMeshQuality.h
+-
+vtkSmartPointer.h
+-
+vtkSphereSource.h
+-
+vtkTriangleFilter.h
+-
+vtkPolyDataMapper.h
+-
+vtkActor.h
+-
+vtkRenderWindow.h
+-
+vtkRenderer.h
+-
+vtkRenderWindowInteractor.h
+-
+vtkAppendFilter.h
+-
+quality.hpp
+/net/i/souaraqa/visual_insitu/minimesh/src/quality.hpp
+viewer.hpp
+/net/i/souaraqa/visual_insitu/minimesh/src/viewer.hpp
+
+/net/i/souaraqa/visual_insitu/minimesh/src/transform.cpp
 cstdlib
 -
 iostream
@@ -220,13 +278,49 @@ vtkTransformFilter.h
 vtkDataSetMapper.h
 -
 transform.hpp
-/net/i/ielguato/Documents/cisd/minimesh/src/transform.hpp
+/net/i/souaraqa/visual_insitu/minimesh/src/transform.hpp
 cpptoml.h
-/net/i/ielguato/Documents/cisd/minimesh/src/cpptoml.h
+/net/i/souaraqa/visual_insitu/minimesh/src/cpptoml.h
 viewer.hpp
-/net/i/ielguato/Documents/cisd/minimesh/src/viewer.hpp
+/net/i/souaraqa/visual_insitu/minimesh/src/viewer.hpp
 options.hpp
-/net/i/ielguato/Documents/cisd/minimesh/src/options.hpp
+/net/i/souaraqa/visual_insitu/minimesh/src/options.hpp
+quality.hpp
+/net/i/souaraqa/visual_insitu/minimesh/src/quality.hpp
+
+/net/i/souaraqa/visual_insitu/minimesh/src/viewer.cpp
+cstdlib
+-
+iostream
+-
+string
+-
+vector
+-
+memory
+-
+tuple
+-
+vtkSmartPointer.h
+-
+vtkActor.h
+-
+vtkDataSetMapper.h
+-
+vtkDataSet.h
+-
+vtkProperty.h
+-
+vtkRenderWindow.h
+-
+vtkRenderWindowInteractor.h
+-
+vtkRenderer.h
+-
+vtkNamedColors.h
+-
+viewer.hpp
+/net/i/souaraqa/visual_insitu/minimesh/src/viewer.hpp
 
 /opt/vtk/8.2.0/include/vtk-8.2/vtkABI.h
 
@@ -366,6 +460,12 @@ vtkIdTypeArray.h
 vtkCell.h
 /opt/vtk/8.2.0/include/vtk-8.2/vtkCell.h
 
+/opt/vtk/8.2.0/include/vtk-8.2/vtkCellData.h
+vtkCommonDataModelModule.h
+/opt/vtk/8.2.0/include/vtk-8.2/vtkCommonDataModelModule.h
+vtkDataSetAttributes.h
+/opt/vtk/8.2.0/include/vtk-8.2/vtkDataSetAttributes.h
+
 /opt/vtk/8.2.0/include/vtk-8.2/vtkCellLinks.h
 vtkCommonDataModelModule.h
 /opt/vtk/8.2.0/include/vtk-8.2/vtkCommonDataModelModule.h
@@ -450,11 +550,49 @@ vtkCommonDataModelModule.h
 vtkObject.h
 /opt/vtk/8.2.0/include/vtk-8.2/vtkObject.h
 
+/opt/vtk/8.2.0/include/vtk-8.2/vtkDataReader.h
+vtkIOLegacyModule.h
+/opt/vtk/8.2.0/include/vtk-8.2/vtkIOLegacyModule.h
+vtkSimpleReader.h
+/opt/vtk/8.2.0/include/vtk-8.2/vtkSimpleReader.h
+vtkStdString.h
+/opt/vtk/8.2.0/include/vtk-8.2/vtkStdString.h
+locale
+-
+
 /opt/vtk/8.2.0/include/vtk-8.2/vtkDataSet.h
 vtkCommonDataModelModule.h
 /opt/vtk/8.2.0/include/vtk-8.2/vtkCommonDataModelModule.h
 vtkDataObject.h
 /opt/vtk/8.2.0/include/vtk-8.2/vtkDataObject.h
+
+/opt/vtk/8.2.0/include/vtk-8.2/vtkDataSetAlgorithm.h
+vtkCommonExecutionModelModule.h
+/opt/vtk/8.2.0/include/vtk-8.2/vtkCommonExecutionModelModule.h
+vtkAlgorithm.h
+/opt/vtk/8.2.0/include/vtk-8.2/vtkAlgorithm.h
+
+/opt/vtk/8.2.0/include/vtk-8.2/vtkDataSetAttributes.h
+vtkCommonDataModelModule.h
+/opt/vtk/8.2.0/include/vtk-8.2/vtkCommonDataModelModule.h
+vtkDataSetAttributesFieldList.h
+/opt/vtk/8.2.0/include/vtk-8.2/vtkDataSetAttributesFieldList.h
+vtkFieldData.h
+/opt/vtk/8.2.0/include/vtk-8.2/vtkFieldData.h
+
+/opt/vtk/8.2.0/include/vtk-8.2/vtkDataSetAttributesFieldList.h
+vtkCommonDataModelModule.h
+/opt/vtk/8.2.0/include/vtk-8.2/vtkCommonDataModelModule.h
+vtkSetGet.h
+/opt/vtk/8.2.0/include/vtk-8.2/vtkSetGet.h
+vtkSmartPointer.h
+/opt/vtk/8.2.0/include/vtk-8.2/vtkSmartPointer.h
+vtkSystemIncludes.h
+/opt/vtk/8.2.0/include/vtk-8.2/vtkSystemIncludes.h
+functional
+-
+memory
+-
 
 /opt/vtk/8.2.0/include/vtk-8.2/vtkDataSetMapper.h
 vtkRenderingCoreModule.h
@@ -468,6 +606,22 @@ vtkCommonCoreModule.h
 vtkSystemIncludes.h
 /opt/vtk/8.2.0/include/vtk-8.2/vtkSystemIncludes.h
 
+/opt/vtk/8.2.0/include/vtk-8.2/vtkDoubleArray.h
+vtkCommonCoreModule.h
+/opt/vtk/8.2.0/include/vtk-8.2/vtkCommonCoreModule.h
+vtkDataArray.h
+/opt/vtk/8.2.0/include/vtk-8.2/vtkDataArray.h
+vtkAOSDataArrayTemplate.h
+/opt/vtk/8.2.0/include/vtk-8.2/vtkAOSDataArrayTemplate.h
+
+/opt/vtk/8.2.0/include/vtk-8.2/vtkFieldData.h
+vtkCommonDataModelModule.h
+/opt/vtk/8.2.0/include/vtk-8.2/vtkCommonDataModelModule.h
+vtkObject.h
+/opt/vtk/8.2.0/include/vtk-8.2/vtkObject.h
+vtkAbstractArray.h
+/opt/vtk/8.2.0/include/vtk-8.2/vtkAbstractArray.h
+
 /opt/vtk/8.2.0/include/vtk-8.2/vtkFiltersCoreModule.h
 vtkAutoInit.h
 /opt/vtk/8.2.0/include/vtk-8.2/vtkAutoInit.h
@@ -479,6 +633,8 @@ vtkFiltersCoreModule.h
 /opt/vtk/8.2.0/include/vtk-8.2/vtkFiltersGeometryModule.h
 
 /opt/vtk/8.2.0/include/vtk-8.2/vtkFiltersSourcesModule.h
+
+/opt/vtk/8.2.0/include/vtk-8.2/vtkFiltersVerdictModule.h
 
 /opt/vtk/8.2.0/include/vtk-8.2/vtkGenericDataArray.h
 vtkDataArray.h
@@ -523,6 +679,8 @@ vtkCommonTransformsModule.h
 /opt/vtk/8.2.0/include/vtk-8.2/vtkCommonTransformsModule.h
 vtkAbstractTransform.h
 /opt/vtk/8.2.0/include/vtk-8.2/vtkAbstractTransform.h
+
+/opt/vtk/8.2.0/include/vtk-8.2/vtkIOLegacyModule.h
 
 /opt/vtk/8.2.0/include/vtk-8.2/vtkIOStream.h
 vtkConfigure.h
@@ -616,6 +774,12 @@ vtkCommonMathModule.h
 vtkObject.h
 /opt/vtk/8.2.0/include/vtk-8.2/vtkObject.h
 
+/opt/vtk/8.2.0/include/vtk-8.2/vtkMeshQuality.h
+vtkFiltersVerdictModule.h
+/opt/vtk/8.2.0/include/vtk-8.2/vtkFiltersVerdictModule.h
+vtkDataSetAlgorithm.h
+/opt/vtk/8.2.0/include/vtk-8.2/vtkDataSetAlgorithm.h
+
 /opt/vtk/8.2.0/include/vtk-8.2/vtkNamedColors.h
 vtkCommonColorModule.h
 /opt/vtk/8.2.0/include/vtk-8.2/vtkCommonColorModule.h
@@ -669,6 +833,12 @@ vtkObject.h
 /opt/vtk/8.2.0/include/vtk-8.2/vtkObject.h
 string
 -
+
+/opt/vtk/8.2.0/include/vtk-8.2/vtkPointData.h
+vtkCommonDataModelModule.h
+/opt/vtk/8.2.0/include/vtk-8.2/vtkCommonDataModelModule.h
+vtkDataSetAttributes.h
+/opt/vtk/8.2.0/include/vtk-8.2/vtkDataSetAttributes.h
 
 /opt/vtk/8.2.0/include/vtk-8.2/vtkPointSet.h
 vtkCommonDataModelModule.h
@@ -740,6 +910,20 @@ vtkCollection.h
 vtkProp.h
 /opt/vtk/8.2.0/include/vtk-8.2/vtkProp.h
 
+/opt/vtk/8.2.0/include/vtk-8.2/vtkProperty.h
+vtkRenderingCoreModule.h
+/opt/vtk/8.2.0/include/vtk-8.2/vtkRenderingCoreModule.h
+vtkObject.h
+/opt/vtk/8.2.0/include/vtk-8.2/vtkObject.h
+map
+-
+
+/opt/vtk/8.2.0/include/vtk-8.2/vtkReaderAlgorithm.h
+vtkCommonExecutionModelModule.h
+/opt/vtk/8.2.0/include/vtk-8.2/vtkCommonExecutionModelModule.h
+vtkAlgorithm.h
+/opt/vtk/8.2.0/include/vtk-8.2/vtkAlgorithm.h
+
 /opt/vtk/8.2.0/include/vtk-8.2/vtkRenderWindow.h
 vtkRenderingCoreModule.h
 /opt/vtk/8.2.0/include/vtk-8.2/vtkRenderingCoreModule.h
@@ -780,6 +964,14 @@ vtkSystemIncludes.h
 math.h
 -
 typeinfo
+-
+
+/opt/vtk/8.2.0/include/vtk-8.2/vtkSimpleReader.h
+vtkCommonExecutionModelModule.h
+/opt/vtk/8.2.0/include/vtk-8.2/vtkCommonExecutionModelModule.h
+vtkReaderAlgorithm.h
+/opt/vtk/8.2.0/include/vtk-8.2/vtkReaderAlgorithm.h
+string
 -
 
 /opt/vtk/8.2.0/include/vtk-8.2/vtkSmartPointer.h
@@ -868,6 +1060,12 @@ vtkFiltersGeneralModule.h
 vtkPolyDataAlgorithm.h
 /opt/vtk/8.2.0/include/vtk-8.2/vtkPolyDataAlgorithm.h
 
+/opt/vtk/8.2.0/include/vtk-8.2/vtkTriangleFilter.h
+vtkFiltersCoreModule.h
+/opt/vtk/8.2.0/include/vtk-8.2/vtkFiltersCoreModule.h
+vtkPolyDataAlgorithm.h
+/opt/vtk/8.2.0/include/vtk-8.2/vtkPolyDataAlgorithm.h
+
 /opt/vtk/8.2.0/include/vtk-8.2/vtkTuple.h
 vtkIOStream.h
 /opt/vtk/8.2.0/include/vtk-8.2/vtkIOStream.h
@@ -927,6 +1125,12 @@ vtkCommonDataModelModule.h
 /opt/vtk/8.2.0/include/vtk-8.2/vtkCommonDataModelModule.h
 vtkPointSet.h
 /opt/vtk/8.2.0/include/vtk-8.2/vtkPointSet.h
+
+/opt/vtk/8.2.0/include/vtk-8.2/vtkUnstructuredGridReader.h
+vtkIOLegacyModule.h
+/opt/vtk/8.2.0/include/vtk-8.2/vtkIOLegacyModule.h
+vtkDataReader.h
+/opt/vtk/8.2.0/include/vtk-8.2/vtkDataReader.h
 
 /opt/vtk/8.2.0/include/vtk-8.2/vtkVariant.h
 vtkCommonCoreModule.h
@@ -1016,6 +1220,12 @@ vtkXMLReader.h
 memory
 -
 
+/opt/vtk/8.2.0/include/vtk-8.2/vtkXMLImageDataReader.h
+vtkIOXMLModule.h
+/opt/vtk/8.2.0/include/vtk-8.2/vtkIOXMLModule.h
+vtkXMLStructuredDataReader.h
+/opt/vtk/8.2.0/include/vtk-8.2/vtkXMLStructuredDataReader.h
+
 /opt/vtk/8.2.0/include/vtk-8.2/vtkXMLPolyDataReader.h
 vtkIOXMLModule.h
 /opt/vtk/8.2.0/include/vtk-8.2/vtkIOXMLModule.h
@@ -1029,6 +1239,12 @@ vtkAlgorithm.h
 /opt/vtk/8.2.0/include/vtk-8.2/vtkAlgorithm.h
 string
 -
+
+/opt/vtk/8.2.0/include/vtk-8.2/vtkXMLStructuredDataReader.h
+vtkIOXMLModule.h
+/opt/vtk/8.2.0/include/vtk-8.2/vtkIOXMLModule.h
+vtkXMLDataReader.h
+/opt/vtk/8.2.0/include/vtk-8.2/vtkXMLDataReader.h
 
 /opt/vtk/8.2.0/include/vtk-8.2/vtkXMLUnstructuredDataReader.h
 vtkIOXMLModule.h

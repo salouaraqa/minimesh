@@ -9,6 +9,7 @@ struct Params
 {
   virtual ~Params(void) = default;
   TransformType transform_type;
+  bool compute_quality;
   // TODO
 };
 

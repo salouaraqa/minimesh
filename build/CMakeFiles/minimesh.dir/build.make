@@ -43,10 +43,10 @@ RM = /usr/bin/cmake3 -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /net/i/ielguato/Documents/cisd/minimesh
+CMAKE_SOURCE_DIR = /net/i/souaraqa/visual_insitu/minimesh
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /net/i/ielguato/Documents/cisd/minimesh/build
+CMAKE_BINARY_DIR = /net/i/souaraqa/visual_insitu/minimesh/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/minimesh.dir/depend.make
@@ -59,62 +59,76 @@ include CMakeFiles/minimesh.dir/flags.make
 
 CMakeFiles/minimesh.dir/src/main.cpp.o: CMakeFiles/minimesh.dir/flags.make
 CMakeFiles/minimesh.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/net/i/ielguato/Documents/cisd/minimesh/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/minimesh.dir/src/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/minimesh.dir/src/main.cpp.o -c /net/i/ielguato/Documents/cisd/minimesh/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/net/i/souaraqa/visual_insitu/minimesh/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/minimesh.dir/src/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/minimesh.dir/src/main.cpp.o -c /net/i/souaraqa/visual_insitu/minimesh/src/main.cpp
 
 CMakeFiles/minimesh.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minimesh.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /net/i/ielguato/Documents/cisd/minimesh/src/main.cpp > CMakeFiles/minimesh.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /net/i/souaraqa/visual_insitu/minimesh/src/main.cpp > CMakeFiles/minimesh.dir/src/main.cpp.i
 
 CMakeFiles/minimesh.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minimesh.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /net/i/ielguato/Documents/cisd/minimesh/src/main.cpp -o CMakeFiles/minimesh.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /net/i/souaraqa/visual_insitu/minimesh/src/main.cpp -o CMakeFiles/minimesh.dir/src/main.cpp.s
 
 CMakeFiles/minimesh.dir/src/options.cpp.o: CMakeFiles/minimesh.dir/flags.make
 CMakeFiles/minimesh.dir/src/options.cpp.o: ../src/options.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/net/i/ielguato/Documents/cisd/minimesh/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/minimesh.dir/src/options.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/minimesh.dir/src/options.cpp.o -c /net/i/ielguato/Documents/cisd/minimesh/src/options.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/net/i/souaraqa/visual_insitu/minimesh/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/minimesh.dir/src/options.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/minimesh.dir/src/options.cpp.o -c /net/i/souaraqa/visual_insitu/minimesh/src/options.cpp
 
 CMakeFiles/minimesh.dir/src/options.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minimesh.dir/src/options.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /net/i/ielguato/Documents/cisd/minimesh/src/options.cpp > CMakeFiles/minimesh.dir/src/options.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /net/i/souaraqa/visual_insitu/minimesh/src/options.cpp > CMakeFiles/minimesh.dir/src/options.cpp.i
 
 CMakeFiles/minimesh.dir/src/options.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minimesh.dir/src/options.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /net/i/ielguato/Documents/cisd/minimesh/src/options.cpp -o CMakeFiles/minimesh.dir/src/options.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /net/i/souaraqa/visual_insitu/minimesh/src/options.cpp -o CMakeFiles/minimesh.dir/src/options.cpp.s
 
 CMakeFiles/minimesh.dir/src/viewer.cpp.o: CMakeFiles/minimesh.dir/flags.make
 CMakeFiles/minimesh.dir/src/viewer.cpp.o: ../src/viewer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/net/i/ielguato/Documents/cisd/minimesh/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/minimesh.dir/src/viewer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/minimesh.dir/src/viewer.cpp.o -c /net/i/ielguato/Documents/cisd/minimesh/src/viewer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/net/i/souaraqa/visual_insitu/minimesh/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/minimesh.dir/src/viewer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/minimesh.dir/src/viewer.cpp.o -c /net/i/souaraqa/visual_insitu/minimesh/src/viewer.cpp
 
 CMakeFiles/minimesh.dir/src/viewer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minimesh.dir/src/viewer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /net/i/ielguato/Documents/cisd/minimesh/src/viewer.cpp > CMakeFiles/minimesh.dir/src/viewer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /net/i/souaraqa/visual_insitu/minimesh/src/viewer.cpp > CMakeFiles/minimesh.dir/src/viewer.cpp.i
 
 CMakeFiles/minimesh.dir/src/viewer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minimesh.dir/src/viewer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /net/i/ielguato/Documents/cisd/minimesh/src/viewer.cpp -o CMakeFiles/minimesh.dir/src/viewer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /net/i/souaraqa/visual_insitu/minimesh/src/viewer.cpp -o CMakeFiles/minimesh.dir/src/viewer.cpp.s
 
 CMakeFiles/minimesh.dir/src/transform.cpp.o: CMakeFiles/minimesh.dir/flags.make
 CMakeFiles/minimesh.dir/src/transform.cpp.o: ../src/transform.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/net/i/ielguato/Documents/cisd/minimesh/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/minimesh.dir/src/transform.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/minimesh.dir/src/transform.cpp.o -c /net/i/ielguato/Documents/cisd/minimesh/src/transform.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/net/i/souaraqa/visual_insitu/minimesh/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/minimesh.dir/src/transform.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/minimesh.dir/src/transform.cpp.o -c /net/i/souaraqa/visual_insitu/minimesh/src/transform.cpp
 
 CMakeFiles/minimesh.dir/src/transform.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minimesh.dir/src/transform.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /net/i/ielguato/Documents/cisd/minimesh/src/transform.cpp > CMakeFiles/minimesh.dir/src/transform.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /net/i/souaraqa/visual_insitu/minimesh/src/transform.cpp > CMakeFiles/minimesh.dir/src/transform.cpp.i
 
 CMakeFiles/minimesh.dir/src/transform.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minimesh.dir/src/transform.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /net/i/ielguato/Documents/cisd/minimesh/src/transform.cpp -o CMakeFiles/minimesh.dir/src/transform.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /net/i/souaraqa/visual_insitu/minimesh/src/transform.cpp -o CMakeFiles/minimesh.dir/src/transform.cpp.s
+
+CMakeFiles/minimesh.dir/src/quality.cpp.o: CMakeFiles/minimesh.dir/flags.make
+CMakeFiles/minimesh.dir/src/quality.cpp.o: ../src/quality.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/net/i/souaraqa/visual_insitu/minimesh/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/minimesh.dir/src/quality.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/minimesh.dir/src/quality.cpp.o -c /net/i/souaraqa/visual_insitu/minimesh/src/quality.cpp
+
+CMakeFiles/minimesh.dir/src/quality.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minimesh.dir/src/quality.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /net/i/souaraqa/visual_insitu/minimesh/src/quality.cpp > CMakeFiles/minimesh.dir/src/quality.cpp.i
+
+CMakeFiles/minimesh.dir/src/quality.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minimesh.dir/src/quality.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /net/i/souaraqa/visual_insitu/minimesh/src/quality.cpp -o CMakeFiles/minimesh.dir/src/quality.cpp.s
 
 # Object files for target minimesh
 minimesh_OBJECTS = \
 "CMakeFiles/minimesh.dir/src/main.cpp.o" \
 "CMakeFiles/minimesh.dir/src/options.cpp.o" \
 "CMakeFiles/minimesh.dir/src/viewer.cpp.o" \
-"CMakeFiles/minimesh.dir/src/transform.cpp.o"
+"CMakeFiles/minimesh.dir/src/transform.cpp.o" \
+"CMakeFiles/minimesh.dir/src/quality.cpp.o"
 
 # External object files for target minimesh
 minimesh_EXTERNAL_OBJECTS =
@@ -123,6 +137,7 @@ minimesh: CMakeFiles/minimesh.dir/src/main.cpp.o
 minimesh: CMakeFiles/minimesh.dir/src/options.cpp.o
 minimesh: CMakeFiles/minimesh.dir/src/viewer.cpp.o
 minimesh: CMakeFiles/minimesh.dir/src/transform.cpp.o
+minimesh: CMakeFiles/minimesh.dir/src/quality.cpp.o
 minimesh: CMakeFiles/minimesh.dir/build.make
 minimesh: /opt/vtk/8.2.0/lib64/libvtkDomainsChemistryOpenGL2-8.2.so.1
 minimesh: /opt/vtk/8.2.0/lib64/libvtkFiltersFlowPaths-8.2.so.1
@@ -258,7 +273,7 @@ minimesh: /opt/vtk/8.2.0/lib64/libvtkCommonCore-8.2.so.1
 minimesh: /opt/vtk/8.2.0/lib64/libvtkfreetype-8.2.so.1
 minimesh: /opt/vtk/8.2.0/lib64/libvtkzlib-8.2.so.1
 minimesh: CMakeFiles/minimesh.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/net/i/ielguato/Documents/cisd/minimesh/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable minimesh"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/net/i/souaraqa/visual_insitu/minimesh/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable minimesh"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/minimesh.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -271,6 +286,6 @@ CMakeFiles/minimesh.dir/clean:
 .PHONY : CMakeFiles/minimesh.dir/clean
 
 CMakeFiles/minimesh.dir/depend:
-	cd /net/i/ielguato/Documents/cisd/minimesh/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /net/i/ielguato/Documents/cisd/minimesh /net/i/ielguato/Documents/cisd/minimesh /net/i/ielguato/Documents/cisd/minimesh/build /net/i/ielguato/Documents/cisd/minimesh/build /net/i/ielguato/Documents/cisd/minimesh/build/CMakeFiles/minimesh.dir/DependInfo.cmake --color=$(COLOR)
+	cd /net/i/souaraqa/visual_insitu/minimesh/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /net/i/souaraqa/visual_insitu/minimesh /net/i/souaraqa/visual_insitu/minimesh /net/i/souaraqa/visual_insitu/minimesh/build /net/i/souaraqa/visual_insitu/minimesh/build /net/i/souaraqa/visual_insitu/minimesh/build/CMakeFiles/minimesh.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/minimesh.dir/depend
 

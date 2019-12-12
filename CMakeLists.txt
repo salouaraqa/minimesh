@@ -15,6 +15,7 @@ set(EXE_SOURCES
   src/options.cpp
   src/viewer.cpp
   src/transform.cpp
+  src/quality.cpp
   # Add other source files here, one by line
 )
 

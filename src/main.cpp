@@ -25,6 +25,7 @@
 #include <vtkNamedColors.h>
 #include <vtkVersion.h>
 #include <vtkXMLUnstructuredGridWriter.h>
+#include <vtkUnstructuredGridReader.h>
 
 #include "cpptoml.h"
 #include "options.hpp"
@@ -64,6 +65,9 @@ int main(int argc, char **argv)
     }
 
     file_name = argv[2];
+
+
+
     auto reader = vtkSmartPointer<vtkXMLUnstructuredGridReader>::New();
     reader->SetFileName(file_name.c_str());
     reader->Update();

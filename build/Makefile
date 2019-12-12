@@ -48,10 +48,10 @@ RM = /usr/bin/cmake3 -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /net/i/ielguato/Documents/cisd/minimesh
+CMAKE_SOURCE_DIR = /net/i/souaraqa/visual_insitu/minimesh
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /net/i/ielguato/Documents/cisd/minimesh/build
+CMAKE_BINARY_DIR = /net/i/souaraqa/visual_insitu/minimesh/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,9 +126,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /net/i/ielguato/Documents/cisd/minimesh/build/CMakeFiles /net/i/ielguato/Documents/cisd/minimesh/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /net/i/souaraqa/visual_insitu/minimesh/build/CMakeFiles /net/i/souaraqa/visual_insitu/minimesh/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /net/i/ielguato/Documents/cisd/minimesh/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /net/i/souaraqa/visual_insitu/minimesh/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -223,6 +223,33 @@ src/options.cpp.s:
 	$(MAKE) -f CMakeFiles/minimesh.dir/build.make CMakeFiles/minimesh.dir/src/options.cpp.s
 .PHONY : src/options.cpp.s
 
+src/quality.o: src/quality.cpp.o
+
+.PHONY : src/quality.o
+
+# target to build an object file
+src/quality.cpp.o:
+	$(MAKE) -f CMakeFiles/minimesh.dir/build.make CMakeFiles/minimesh.dir/src/quality.cpp.o
+.PHONY : src/quality.cpp.o
+
+src/quality.i: src/quality.cpp.i
+
+.PHONY : src/quality.i
+
+# target to preprocess a source file
+src/quality.cpp.i:
+	$(MAKE) -f CMakeFiles/minimesh.dir/build.make CMakeFiles/minimesh.dir/src/quality.cpp.i
+.PHONY : src/quality.cpp.i
+
+src/quality.s: src/quality.cpp.s
+
+.PHONY : src/quality.s
+
+# target to generate assembly for a file
+src/quality.cpp.s:
+	$(MAKE) -f CMakeFiles/minimesh.dir/build.make CMakeFiles/minimesh.dir/src/quality.cpp.s
+.PHONY : src/quality.cpp.s
+
 src/transform.o: src/transform.cpp.o
 
 .PHONY : src/transform.o
@@ -296,6 +323,9 @@ help:
 	@echo "... src/options.o"
 	@echo "... src/options.i"
 	@echo "... src/options.s"
+	@echo "... src/quality.o"
+	@echo "... src/quality.i"
+	@echo "... src/quality.s"
 	@echo "... src/transform.o"
 	@echo "... src/transform.i"
 	@echo "... src/transform.s"

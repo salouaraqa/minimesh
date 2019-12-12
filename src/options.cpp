@@ -43,14 +43,15 @@ Params*  OptionsParser::parse(void)
     auto io = m_data->get_table("io");
     std::vector<std::string> meshes = *io->get_array_of<std::string>("inputs");
     std::string result_file_name = *io->get_as<std::string>("output");
+    auto quality = m_data->get_table("quality");
+    bool compute_quality = *quality->get_as<bool>("compute_quality");
 
     MergeParams *merge_params = new MergeParams();
     merge_params->transform_type = TransformType::MERGE;
     merge_params->input = meshes;
     merge_params->output = result_file_name;
+    merge_params->compute_quality = compute_quality;
 
-    auto quality = m_data->get_table("quality");
-    bool compute_quality = *quality->get_as<bool>("compute_quality");
 
     return merge_params;
 
@@ -61,15 +62,16 @@ Params*  OptionsParser::parse(void)
     auto io = m_data->get_table("io");
     std::string mesh = *io->get_as<std::string>("input");
     std::string result_file_name = *io->get_as<std::string>("output");
+    auto quality = m_data->get_table("quality");
+    bool compute_quality = *quality->get_as<bool>("compute_quality");
 
     TranslationParams *translation_params = new TranslationParams();
     translation_params->transform_type = TransformType::TRANSLATE;
     translation_params->coords = coords;
     translation_params->input = mesh;
     translation_params->output = result_file_name;
+    translation_params->compute_quality = compute_quality;
 
-    auto quality = m_data->get_table("quality");
-    bool compute_quality = *quality->get_as<bool>("compute_quality");
 
     return translation_params;
 

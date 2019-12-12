@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/minimesh.dir/src/options.cpp.o"
   "CMakeFiles/minimesh.dir/src/viewer.cpp.o"
   "CMakeFiles/minimesh.dir/src/transform.cpp.o"
+  "CMakeFiles/minimesh.dir/src/quality.cpp.o"
   "minimesh.pdb"
   "minimesh"
 )
